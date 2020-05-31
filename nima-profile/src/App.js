@@ -5,6 +5,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 //import "./app.scss";
 
 import LandingPage from "./components/pages/landingPage/LandingPage";
+import NavBar from "./components/layout/navbar/NavBar";
 
 function App() {
   useEffect(() => {
@@ -15,14 +16,16 @@ function App() {
   return (
     <div style={{ overflowY: "scroll", overflowX: "hidden" }}>
       <LandingPage />
+      <NavBar />
       <div
         style={{
           position: "absolute",
           top: "800px",
-          height: "500px",
+          height: "900px",
           width: "100%",
           backgroundColor: "purple",
         }}
+        id="testing"
       ></div>
     </div>
   );

@@ -14,7 +14,9 @@ const LandingPage = () => {
         <div className="clouds"></div>
       </div>
       <h1 className="welcome">Welcome to my Developer page</h1>
-      <h2 className="subWelcome">Click here to learn more</h2>
+      <h2 className="subWelcome">
+        <a href="#navBar">Click here to learn more</a>
+      </h2>
     </div>
   );
 };

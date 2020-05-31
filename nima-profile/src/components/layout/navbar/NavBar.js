@@ -1,9 +1,10 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from "react";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <Fragment>
-    <nav className="nav-extended">
+    <div className="posi" id="navBar">
+      <nav className="nav-extended">
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">
             Logo
@@ -67,8 +68,8 @@ const NavBar = () => {
       <div id="test4" className="col s12">
         Test 4
       </div>
-      </Fragment>
-  )
-}
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;
