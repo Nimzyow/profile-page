@@ -13,10 +13,12 @@ const LandingPage = () => {
         <div className="twinkling"></div>
         <div className="clouds"></div>
       </div>
-      <h1 className="welcome">Welcome to my Developer page</h1>
-      <h2 className="subWelcome">
-        <a href="#navBar">Click here to learn more</a>
-      </h2>
+      <div className="welcome">
+        <h1>Welcome to my Developer page</h1>
+        <h2 className="subWelcome">
+          <a href="#navBar">Click here to learn more</a>
+        </h2>
+      </div>
     </div>
   );
 };

@@ -114,9 +114,16 @@ img {
 }
 
 .subWelcome {
-  color: white;
-  z-index: 10;
-  left: 50px;
-  position: absolute;
-  top: 50%;
+  margin-left: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subWelcome {
+    margin-left: 50px;
+  }
+}
+
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
 }
