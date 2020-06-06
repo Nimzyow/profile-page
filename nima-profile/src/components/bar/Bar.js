@@ -3,7 +3,7 @@ import "./Bar.scss";
 
 export const Bar = () => {
   return (
-    <div className="skills">
+    <div className="skills" style={{ zIndex: "0" }}>
       <div className="charts">
         <div className="chart chart--dev">
           <span className="chart__title">Development</span>

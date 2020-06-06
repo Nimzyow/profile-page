@@ -6,6 +6,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 
 import LandingPage from "./components/pages/landingPage/LandingPage";
 import NavBar from "./components/layout/navbar/NavBar";
+import { Bar } from "./components/bar/Bar";
 
 function App() {
   useEffect(() => {
@@ -40,10 +41,11 @@ function App() {
           top: "800px",
           height: "900px",
           width: "100%",
-          backgroundColor: "purple",
         }}
         id="testing"
-      ></div>
+      >
+        <Bar />
+      </div>
     </div>
   );
 }
