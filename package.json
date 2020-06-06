@@ -1,0 +1,25 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Profile done with React and Redux",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start --prefix nima-profile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimzyow/profile-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nimzyow/profile-page/issues"
+  },
+  "homepage": "https://github.com/Nimzyow/profile-page#readme"
+}
