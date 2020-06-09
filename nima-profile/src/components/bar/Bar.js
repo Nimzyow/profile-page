@@ -29,7 +29,7 @@ export const Bar = () => {
   };
 
   return (
-    <div className="skills" style={{ zIndex: "0", marginTop: "90px" }}>
+    <div className="skills" style={{ zIndex: "0", marginTop: "20px" }}>
       <div className="charts">
         <div className="chart chart--dev">
           <ul className="chart--horiz">{skillPercentageElement()}</ul>
