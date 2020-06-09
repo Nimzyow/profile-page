@@ -7,6 +7,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 import LandingPage from "./pages/landingPage/LandingPage";
 import NavBar from "./components/layout/navbar/NavBar";
 import { Bar } from "./components/bar/Bar";
+import { Header } from "./components/header/Header";
 
 function App() {
   useEffect(() => {
@@ -38,7 +39,18 @@ function App() {
       <div
         style={{
           position: "absolute",
-          top: "800px",
+          top: "110%",
+          width: "100%",
+        }}
+      >
+        {" "}
+        <Header text="ABOUT" />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "100%",
           height: "900px",
           width: "100%",
         }}
