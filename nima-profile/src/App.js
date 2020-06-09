@@ -8,6 +8,7 @@ import LandingPage from "./pages/landingPage/LandingPage";
 import NavBar from "./components/layout/navbar/NavBar";
 import { Bar } from "./components/bar/Bar";
 import { Header } from "./components/header/Header";
+import { About } from "./components/about/About";
 
 function App() {
   useEffect(() => {
@@ -46,6 +47,17 @@ function App() {
         {" "}
         <Header text="Skill set" />
         <Bar />
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "185%",
+          width: "100%",
+        }}
+      >
+        {" "}
+        <Header text="About" />
+        <About />
       </div>
     </div>
   );
