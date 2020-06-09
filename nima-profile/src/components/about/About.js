@@ -1,36 +1,36 @@
 import React from "react";
-import img from "../../assets/hex.png";
+import "./About.css";
 
 export const About = () => {
   return (
     <div
       style={{
-        border: "1px solid black",
         height: "200px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-evenly",
+        marginTop: "20%",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <h6>1</h6>
-        <h6>2</h6>
+      <div className="aboutSnipRow">
+        <div className="aboutSnip">
+          <div id="heart" />
+          <p>this is soething to type and i am going to type it</p>
+        </div>
+        <div className="aboutSnip">
+          <div id="heart" />
+          <p>this is something i had to do and i and as das</p>
+        </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <h6>3</h6>
-        <h6>4</h6>
+      <div className="aboutSnipRow">
+        <div className="aboutSnip">
+          <div id="heart" />
+          <p>this is soething to type and i am going to type it</p>
+        </div>
+        <div className="aboutSnip">
+          <div id="heart" />
+          <p>this is something i had to do and i and as das</p>
+        </div>
       </div>
     </div>
   );
