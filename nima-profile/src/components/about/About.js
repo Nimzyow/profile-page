@@ -1,37 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { Tabs, Tab } from "react-bootstrap";
 import "./About.css";
 
 export const About = () => {
+  const [key, setKey] = useState("home");
+
   return (
-    <div
-      style={{
-        height: "200px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-evenly",
-        marginTop: "20%",
-      }}
+    <Tabs
+      id="controlled-tab-example"
+      activeKey={key}
+      onSelect={(k) => setKey(k)}
     >
-      <div className="aboutSnipRow">
-        <div className="aboutSnip">
-          <div id="heart" />
-          <p>this is soething to type and i am going to type it</p>
-        </div>
-        <div className="aboutSnip">
-          <div id="heart" />
-          <p>this is something i had to do and i and as das</p>
-        </div>
-      </div>
-      <div className="aboutSnipRow">
-        <div className="aboutSnip">
-          <div id="heart" />
-          <p>this is soething to type and i am going to type it</p>
-        </div>
-        <div className="aboutSnip">
-          <div id="heart" />
-          <p>this is something i had to do and i and as das</p>
-        </div>
-      </div>
-    </div>
+      <Tab eventKey="home" title="Home">
+        <p style={{ marginTop: "5%" }}>meow meow meow meow</p>
+      </Tab>
+      <Tab eventKey="profile" title="Profile">
+        <p style={{ marginTop: "5%" }}>woof woof woof</p>
+      </Tab>
+      <Tab eventKey="contact" title="Contact">
+        <p style={{ marginTop: "5%" }}>moo moo moo</p>
+      </Tab>
+    </Tabs>
   );
 };
