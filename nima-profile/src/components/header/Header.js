@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = ({ text }) => {
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <h3>{text}</h3>
     </div>
   );

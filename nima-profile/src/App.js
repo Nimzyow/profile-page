@@ -44,14 +44,14 @@ function App() {
         }}
       >
         {" "}
-        <Header text="ABOUT" />
+        <Header text="Skill set" />
       </div>
 
       <div
         style={{
           position: "absolute",
-          top: "100%",
-          height: "900px",
+          top: "105%",
+          height: "700px",
           width: "100%",
         }}
         id="testing"
