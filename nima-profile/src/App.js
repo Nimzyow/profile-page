@@ -4,7 +4,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 //import "./App.css";
 //import "./app.scss";
 
-import LandingPage from "./components/pages/landingPage/LandingPage";
+import LandingPage from "./pages/landingPage/LandingPage";
 import NavBar from "./components/layout/navbar/NavBar";
 import { Bar } from "./components/bar/Bar";
 
