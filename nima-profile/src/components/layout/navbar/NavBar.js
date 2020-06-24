@@ -1,42 +1,20 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
 
 const NavBar = () => {
   return (
     <div className="posi" id="navBar">
-      <nav className="nav-extended">
-        <div className="nav-wrapper">
-          <a href="#" className="brand-logo">
-            Nima Soufiani
-          </a>
-          <a href="#" data-target="mobile-demo" className="sidenav-trigger">
-            <i className="material-icons">menu</i>
-          </a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li>
-              <a href="sass.html">Sass</a>
-            </li>
-            <li>
-              <a href="badges.html">Components</a>
-            </li>
-            <li>
-              <a href="collapsible.html">JavaScript</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <ul className="sidenav" id="mobile-demo">
-        <li>
-          <a href="sass.html">Sass</a>
-        </li>
-        <li>
-          <a href="badges.html">Components</a>
-        </li>
-        <li>
-          <a href="collapsible.html">JavaScript</a>
-        </li>
-      </ul>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 };

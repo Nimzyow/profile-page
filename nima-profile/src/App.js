@@ -1,8 +1,4 @@
 import React, { useEffect } from "react";
-import "materialize-css/dist/css/materialize.min.css";
-import M from "materialize-css/dist/js/materialize.min.js";
-//import "./App.css";
-//import "./app.scss";
 
 import LandingPage from "./pages/landingPage/LandingPage";
 import NavBar from "./components/layout/navbar/NavBar";
@@ -11,11 +7,6 @@ import { Header } from "./components/header/Header";
 import { About } from "./components/about/About";
 
 function App() {
-  useEffect(() => {
-    //initialises Materialise JS
-    M.AutoInit();
-  }, []);
-
   useEffect(() => {
     window.onscroll = function () {
       myFunction();
