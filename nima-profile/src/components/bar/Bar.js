@@ -21,9 +21,9 @@ export const Bar = () => {
       const { skill, percent } = skillPercentage;
 
       return (
-        <li key={skill} className="chart__bar" style={{ width: percent }}>
+        <div key={skill} className="chart__bar" style={{ width: percent }}>
           <span className="chart__label">{skill}</span>
-        </li>
+        </div>
       );
     });
   };

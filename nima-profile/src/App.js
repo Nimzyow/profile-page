@@ -47,7 +47,7 @@ function App() {
         }}
       >
         {" "}
-        <Header text="About" />
+        <Header text="About me" />
         <About />
       </div>
     </div>
