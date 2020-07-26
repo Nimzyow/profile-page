@@ -1,24 +1,11 @@
 import React, { Fragment } from "react";
+import underwaterImage from "../../assets/isometricunderwater.png";
 import "./LandingPage.scss";
 
 const LandingPage = () => {
   return (
-    <div>
-      <div className="background-container">
-        <img
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png"
-          alt=""
-        />
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-        <div className="clouds"></div>
-      </div>
-      <div className="welcome">
-        <h1>Welcome to my Developer page</h1>
-        <h2 className="subWelcome">
-          <a href="#navBar">Click here to learn more</a>
-        </h2>
-      </div>
+    <div className="background-container">
+      <img src={underwaterImage} style={{ width: "100%" }} />
     </div>
   );
 };

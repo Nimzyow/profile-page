@@ -7,49 +7,9 @@ import { Header } from "./components/header/Header";
 import { About } from "./components/about/About";
 
 function App() {
-  useEffect(() => {
-    window.onscroll = function () {
-      myFunction();
-    };
-
-    var navbar = document.getElementById("navBar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  }, []);
-
   return (
-    <div style={{ overflowY: "scroll", overflowX: "hidden" }}>
+    <div>
       <LandingPage />
-      <NavBar />
-      <div
-        style={{
-          position: "absolute",
-          top: "110%",
-          width: "100%",
-        }}
-      >
-        {" "}
-        <Header text="Skill set" />
-        <Bar />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "185%",
-          width: "100%",
-        }}
-      >
-        {" "}
-        <Header text="About me" />
-        <About />
-      </div>
     </div>
   );
 }
