@@ -27,48 +27,12 @@ const LandingPage = () => {
       <map name="Map" id="Map">
         {createArea("10, 277, 10, 312, 163, 387, 163, 351", "javascript")}
         {createArea("178, 352, 178, 387, 330, 312, 330, 277", "javascript")}
-        <area
-          shape="poly"
-          coords="10, 315, 10, 351, 163, 426, 163, 392"
-          onClick={() => {
-            goToLink("react");
-          }}
-        />
-        <area
-          shape="poly"
-          coords="178, 394, 178, 426, 330, 352, 330, 315"
-          onClick={() => {
-            goToLink("react");
-          }}
-        />
-        <area
-          shape="poly"
-          coords="10, 355, 10, 390, 163, 464, 163, 429"
-          onClick={() => {
-            goToLink("typescript");
-          }}
-        />
-        <area
-          shape="poly"
-          coords="178, 431, 178, 464, 330, 390, 330, 355"
-          onClick={() => {
-            goToLink("typescript");
-          }}
-        />
-        <area
-          shape="poly"
-          coords="10, 394, 10, 427, 163, 503, 163, 470"
-          onClick={() => {
-            goToLink("redux");
-          }}
-        />
-        <area
-          shape="poly"
-          coords="178, 471, 178, 503, 330, 429, 330, 396"
-          onClick={() => {
-            goToLink("redux");
-          }}
-        />
+        {createArea("10, 315, 10, 351, 163, 426, 163, 392", "react")}
+        {createArea("178, 394, 178, 426, 330, 352, 330, 315", "react")}
+        {createArea("10, 355, 10, 390, 163, 464, 163, 429", "typescript")}
+        {createArea("178, 431, 178, 464, 330, 390, 330, 355", "typescript")}
+        {createArea("10, 394, 10, 427, 163, 503, 163, 470", "redux")}
+        {createArea("178, 471, 178, 503, 330, 429, 330, 396", "redux")}
 
         <area
           shape="poly"
