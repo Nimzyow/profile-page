@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import underwaterImage from "../../assets/isometricunderwater.png";
 import "./LandingPage.scss";
 
-const LandingPage = () => {
+export const Landing = () => {
   const history = useHistory();
 
   const goToLink = (link) => history.push(`/${link}`);
@@ -33,22 +33,20 @@ const LandingPage = () => {
         {createArea("178, 431, 178, 464, 330, 390, 330, 355", "typescript")}
         {createArea("10, 394, 10, 427, 163, 503, 163, 470", "redux")}
         {createArea("178, 471, 178, 503, 330, 429, 330, 396", "redux")}
-
-        <area
-          shape="poly"
-          href="#node"
-          coords="10, 433, 10, 468, 163, 542, 163, 508"
-          onClick={() => {}}
-        />
-        <area
-          shape="poly"
-          href="#node"
-          coords="178, 507, 178, 542, 330, 468, 330, 433"
-          onClick={() => {}}
-        />
+        {createArea("10, 433, 10, 468, 163, 542, 163, 508", "node")}
+        {createArea("178, 507, 178, 542, 330, 468, 330, 433", "node")}
+        {createArea("10, 472, 10, 507, 163, 581, 163, 546", "express")}
+        {createArea("178, 546, 178, 581, 330, 507, 330, 472", "express")}
+        {createArea("10, 511, 10, 546, 163, 620, 163, 585", "mongodb")}
+        {createArea("178, 585, 178, 620, 330, 546, 330, 511", "mongodb")}
+        {createArea("10, 550, 10, 585, 163, 659, 163, 624", "jestenzyme")}
+        {createArea("178, 624, 178, 659, 330, 585, 330, 550", "jestenzyme")}
+        {createArea("10, 589, 10, 624, 163, 698, 163, 663", "reacttestinglib")}
+        {createArea(
+          "178, 663, 178, 698, 330, 624, 330, 589",
+          "reacttestinglib",
+        )}
       </map>
     </div>
   );
 };
-
-export default LandingPage;

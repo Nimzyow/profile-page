@@ -1,5 +1,5 @@
 import React from "react";
 
-export const redux = () => {
+export const Redux = () => {
   return <div>this is redux page</div>;
 };

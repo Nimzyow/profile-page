@@ -1,5 +1,5 @@
 import React from "react";
 
-export const typescriptPage = () => {
+export const Typescript = () => {
   return <div>this is typescript</div>;
 };

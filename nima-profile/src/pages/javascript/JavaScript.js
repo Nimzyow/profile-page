@@ -1,5 +1,5 @@
 import React from "react";
 
-export const JavaScriptPage = () => {
+export const JavaScript = () => {
   return <div>This is javascript</div>;
 };
