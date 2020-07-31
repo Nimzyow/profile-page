@@ -1,56 +1,33 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import LandingPage from "./pages/landingPage/LandingPage";
-import NavBar from "./components/layout/navbar/NavBar";
-import { Bar } from "./components/bar/Bar";
-import { Header } from "./components/header/Header";
-import { About } from "./components/about/About";
+import { Landing } from "./pages/landing/Landing";
+import { ReactPage } from "./pages/react/ReactPage";
+import { JavaScript } from "./pages/javascript/JavaScript";
+import { Typescript } from "./pages/typescriptPage/typescriptPage";
+import { Node } from "./pages/node/Node";
+import { Redux } from "./pages/redux/Redux";
+import { expressPage } from "./pages/express/expressPage";
+import { jestEnzyme } from "./pages/jestEnzyme/jestEnzyme";
+import { MongoDB } from "./pages/mongodb/MongoDB";
+import { reactTestingLib } from "./pages/reactTestingLib/reactTestingLib";
 
 function App() {
-  useEffect(() => {
-    window.onscroll = function () {
-      myFunction();
-    };
-
-    var navbar = document.getElementById("navBar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  }, []);
-
   return (
-    <div style={{ overflowY: "scroll", overflowX: "hidden" }}>
-      <LandingPage />
-      <NavBar />
-      <div
-        style={{
-          position: "absolute",
-          top: "110%",
-          width: "100%",
-        }}
-      >
-        {" "}
-        <Header text="Skill set" />
-        <Bar />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "185%",
-          width: "100%",
-        }}
-      >
-        {" "}
-        <Header text="About me" />
-        <About />
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/react" component={ReactPage} />
+        <Route exact path="/javascript" component={JavaScript} />
+        <Route exact path="/typescript" component={Typescript} />
+        <Route exact path="/redux" component={Redux} />
+        <Route exact path="/node" component={Node} />
+        <Route exact path="/express" component={expressPage} />
+        <Route exact path="/jestenzyme" component={jestEnzyme} />
+        <Route exact path="/mongodb" component={MongoDB} />
+        <Route exact path="/reacttestinglib" component={reactTestingLib} />
+      </Switch>
+    </Router>
   );
 }
 
