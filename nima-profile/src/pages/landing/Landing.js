@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-import underwaterImage from "../../assets/isometricunderwater.png";
+//import underwaterImage from "../../assets/isometricunderwater.png";
 import "./LandingPage.scss";
 
 export const Landing = () => {
