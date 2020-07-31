@@ -6,7 +6,7 @@ import { ReactPage } from "./pages/react/ReactPage";
 import { JavaScript } from "./pages/javascript/JavaScript";
 import { Typescript } from "./pages/typescriptPage/typescriptPage";
 import { Node } from "./pages/node/Node";
-import { Redux } from "./pages/redux/Redux";
+import { Redux } from "./pages/redux/redux";
 import { expressPage } from "./pages/express/expressPage";
 import { jestEnzyme } from "./pages/jestEnzyme/jestEnzyme";
 import { MongoDB } from "./pages/mongodb/MongoDB";
